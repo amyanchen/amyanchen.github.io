@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/img/amy-logo-bg.png">
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/css/projects.css">
+    <title>Projects - Amy Chen</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm">
+        <a class="navbar-brand" href="/"><img src="/img/amy-logo-black.png" width="60"></a>
+        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">
+                        <p>Home</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/resume">
+                        <p>Resume</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="/projects">
+                        <p>Projects</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="sidebar d-none d-md-block">
+        <h4>Sort by</h4>
+        <p onclick="filter('.card')">View All</p>
+        <p onclick="filter('.sc')">Statistical Computing</p>
+        <p onclick="filter('.wd')">Web Development</p>
+        <p onclick="filter('.ds')">Data Science</p>
+    </div>
+    <!-- Main Content -->
+    <div class="container-fluid">
+        <h4>Projects</h4>
+        <div class="card-columns">
+            <div class="card wd">
+                <div class="card-body">
+                    <p class="card-text date">04.30.19</p>
+                    <h5 class="card-title">Serif.nu</h5>
+                    <p class="card-text">Course registration planning website used by 7000+ Northwestern students every term</p>
+                    <a href="https://serif.nu/" class="card-link">View</a>
+                    <a href="https://github.com/Joonpark13/serif.nu" class="card-link">Repository</a>
+                </div>
+            </div>
+            <div class="card wd">
+                <div class="card-body">
+                    <p class="card-text date">11.30.18</p>
+                    <h5 class="card-title">xterns.com</h5>
+                    <p class="card-text">Platform design to connect diverse, talented students from across the country to top employers through externships</p>
+                    <a href="https://www.xterns.com/" class="card-link">View</a>
+                </div>
+            </div>
+            <div class="card ds">
+                <div class="card-body">
+                    <p class="card-text date">12.09.18</p>
+                    <h5 class="card-title">San Francisco Airbnb Analysis</h5>
+                    <p class="card-text">Exploratory Data Analysis of San Francisco Airbnb Listings</p>
+                    <a href="/files/sf_airbnb_summary" class="card-link">Summary</a>
+                    <a href="/files/sf_airbnb_report" class="card-link">Report</a>
+                    <a href="https://github.com/amyanchen/SF-Airbnb" class="card-link">Repository</a>
+                </div>
+            </div>
+            <div class="card sc">
+                <div class="card-body">
+                    <p class="card-text date">10.09.18</p>
+                    <h5 class="card-title">Monte Carlo Simulation</h5>
+                    <p class="card-text">Estimation of complex integrals using distribution sampling.</p>
+                    <a href="/files/Monte_Carlo_Integration" class="card-link">View</a>
+                    <a href="https://github.com/amyanchen/Computational-Statistics/blob/master/Monte_Carlo_Integration.Rmd" class="card-link">Rmd Source</a>
+                </div>
+            </div>
+            <div class="card sc">
+                <div class="card-body">
+                    <p class="card-text date">10.16.18</p>
+                    <h5 class="card-title">Rejection Sampling</h5>
+                    <p class="card-text">Sampling from complex distributions using common distributions.</p>
+                    <a href="/files/Rejection_Sampling" class="card-link">View</a>
+                    <a href="https://github.com/amyanchen/Computational-Statistics/blob/master/Rejection_Sampling.Rmd" class="card-link">Rmd Source</a>
+                </div>
+            </div>
+            <div class="card sc">
+                <div class="card-body">
+                    <p class="card-text date">10.23.18</p>
+                    <h5 class="card-title">Adaptive Squeezed Rejection Sampling</h5>
+                    <p class="card-text">More efficient sampling from complex distributions using common distributions.</p>
+                    <a href="/files/Adaptive_Rejection_Sampling" class="card-link">View</a>
+                    <a href="https://github.com/amyanchen/Computational-Statistics/blob/master/Adaptive_Rejection_Sampling.Rmd" class="card-link">Rmd Source</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script>
+        function filter(x) {
+            $('.card').css("display", "none");
+            $(x).show();
+        }
+    </script>
+</body>
+
+</html>

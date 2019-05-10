@@ -1,0 +1,51 @@
+body, html {
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+    font-size: 14px;
+    width: 100%;
+    height: 100%;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover p {
+    opacity: 0.5;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: #eee;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ccc;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #bbb;
+}
+
+
+/* Navigation Header */
+
+.navbar {
+    padding: 15px 25px 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media (min-width: 576px) {
+    .nav-item a.active p {
+        border-bottom: 5px solid #b6d8e3;
+    }
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
